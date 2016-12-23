@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <button title="Open side navigation menu">
+      <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+        <g id="menu"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></g>
+      </svg>
+    </button>
+            <ul class="navigation">
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/code">Code</a></li>
+                <li class="active"><a href="/resources">Resources</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </header>
+        <main>
+            <section id="blog">
+                <h1 tabindex="-1">Blog</h1>
+                <ul>
+                    <template id="post-tmpl">
+                        <li><a href="{{url}}">{{title}}</a></li>
+                    </template>
+                </ul>
+            </section>
+            <section id="code">
+                <h1 tabindex="-1">Code</h1>
+            </section>
+            <section id="resources" class="active">
+                <h1 tabindex="-1">Resources</h1>
+                <h2>CSS</h2>
+                <ul>
+                    <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide to Grid, CSS-Tricks, November 2016</a></li>
+                    <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox,  CSS-Tricks, November 2016</a></li>
+                </ul>
+                <h2>Accessibility</h2>
+                <ul>
+                    <li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines 2.0 (WCAG)</a></li>
+                    <li><a href="http://webaim.org/standards/wcag/checklist">Web Aim Checklist for WCAG 2.0</a></li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h1 tabindex="-1">Contact</h1>
+            </section>
+        </main>
+        <aside>
+            <figure>
+                <!--TODO: picture element with webp and jpg versions-->
+                <img width="200" height="200" alt="Portrait photo of Jacek Kościesza wearing black jacket, blue shirt and red tie." src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAbJAAAAJGM3MDMwMTA5LWUzYmQtNGFiYy1hOWJiLTI1MjBjNDE0OWFhNQ.jpg"
+                />
+                <figcaption>Jacek Kościesza</figcaption>
+            </figure>
+        </aside>
+        <footer>
+            <small>Copyright &copy; 2016 &middot; Jacek Kościesza</small>
+        </footer>
+    </div>
+</body>
+
+</html>
